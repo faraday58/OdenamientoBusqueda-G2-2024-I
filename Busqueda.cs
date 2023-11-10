@@ -23,7 +23,7 @@ namespace OdenamientoBusqueda_G2_2024_I
 
         internal static int Binaria(int[] A, int IZQ, int DER, int X)
         {
-            if (IZQ == DER   )
+            if ( DER-1  <=  IZQ  )
             {
                 return -1;
             }
@@ -39,7 +39,7 @@ namespace OdenamientoBusqueda_G2_2024_I
                 {
                     return Binaria(A, IZQ, CEN, X);
                 }
-                else
+                else 
                 {
                     return Binaria(A, CEN, DER, X);
                 }
